@@ -46,8 +46,6 @@ step2.addEventListener('click', (e) => {
     let telephone = document.getElementById('telephone').value;
     let email_tuteur = document.getElementById('email_tuteur').value;
 
-
-
     info_eleve.push({
         cle: compteur,
         nom: nom,

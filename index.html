@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap.bundle.min.js">
     <link rel="stylesheet" href="./font-awesome.css">
-    <title>Document</title>
+    <title>Enregistrement d'élèves</title>
 </head>
 
 <body>
@@ -28,14 +28,14 @@
                             <fieldset id="one" class="">
                                 <div class="form-card">
                                     <h2 class="fs-title">Identité de l'élève</h2>
-                                    <input type="text" name="email" placeholder="Nom" id="nom" />
-                                    <input type="text" name="uname" placeholder="Prenom" id="prenom" />
+                                    <input type="text" name="email" placeholder="Nom" id="nom" required/>
+                                    <input type="text" name="uname" placeholder="Prenom" id="prenom" required/>
                                     <select name="" id="sel">
                                         <option value="Homme">Homme</option>
                                         <option value="Femme">Femme</option>
                                     </select>
-                                    <input type="date" name="cpwd" placeholder="Confirm Password" id="nais" />
-                                    <input type="text" name="cpwd" placeholder="Lieu denaissance " id="lieu" />
+                                    <input type="date" name="cpwd" placeholder="Confirm Password" id="nais" required/>
+                                    <input type="text" name="cpwd" placeholder="Lieu denaissance " id="lieu" required/>
                                     <label for="classe">Classe</label><br>
                                     <select name="" id="classe">
                                         <option value="4eme" selected>6eme</option>
@@ -50,11 +50,11 @@
                             <fieldset id="two" class="none">
                                 <div class="form-card">
                                     <h2 class="fs-title">Identité du tuteur</h2>
-                                    <input type="text" name="fname" placeholder="nom_parent" id="nom_parent" />
-                                    <input type="text" name="lname" placeholder="prenom_parent" id="prenom_parent" />
-                                    <input type="text" name="lname" placeholder="profession" id="profession" />
-                                    <input type="tel" name=" phno " placeholder="Téléphone " id="telephone" />
-                                    <input type="email " name="phno_2 " placeholder="Email du tuteur" id="email_tuteur" />
+                                    <input type="text" name="fname" placeholder="nom_parent" id="nom_parent" required/>
+                                    <input type="text" name="lname" placeholder="prenom_parent" id="prenom_parent" required/>
+                                    <input type="text" name="lname" placeholder="profession" id="profession" required/>
+                                    <input type="tel" name=" phno " placeholder="Téléphone " id="telephone" required/>
+                                    <input type="email " name="phno_2 " placeholder="Email du tuteur" id="email_tuteur" required/>
                                 </div>
                                 <input type="button " name="previous " class="previous action-button-previous " value="Précédent " id="prec" />
                                 <button class="btn btn-success " id="step2">Enregistrer</button>
