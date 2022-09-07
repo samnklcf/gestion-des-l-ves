@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stule.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="./font-awesome.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-bottom: 20px;" class="h1">Ajouter un élève</h1>
+    <div class="parent ">
+
+
+        <div class="cote1">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+
+                <div class="row">
+                    <div class="col-md-12 mx-0">
+                        <form id="msform">
+
+                            <!-- fieldsets -->
+                            <fieldset id="one" class="">
+                                <div class="form-card">
+                                    <h2 class="fs-title">Identité de l'élève</h2>
+                                    <input type="text" name="email" placeholder="Nom" id="nom" />
+                                    <input type="text" name="uname" placeholder="Prenom" id="prenom" />
+                                    <select name="" id="sel">
+                                        <option value="Homme">Homme</option>
+                                        <option value="Femme">Femme</option>
+                                    </select>
+                                    <input type="date" name="cpwd" placeholder="Confirm Password" id="nais" />
+                                    <input type="text" name="cpwd" placeholder="Lieu denaissance " id="lieu" />
+                                    <label for="classe">Classe</label><br>
+                                    <select name="" id="classe">
+                                        <option value="4eme" selected>6eme</option>
+                                        <option value="5eme">5eme</option>
+                                        <option value="4eme">4eme</option>
+                                        <option value="3eme">3eme</option>
+
+                                    </select>
+                                </div>
+                                <input type="button" name="next" class="next action-button" value="Suivant" id="step1" />
+                            </fieldset>
+                            <fieldset id="two" class="none">
+                                <div class="form-card">
+                                    <h2 class="fs-title">Identité du tuteur</h2>
+                                    <input type="text" name="fname" placeholder="nom_parent" id="nom_parent" />
+                                    <input type="text" name="lname" placeholder="prenom_parent" id="prenom_parent" />
+                                    <input type="text" name="lname" placeholder="profession" id="profession" />
+                                    <input type="tel" name=" phno " placeholder="Téléphone " id="telephone" />
+                                    <input type="email " name="phno_2 " placeholder="Email du tuteur" id="email_tuteur" />
+                                </div>
+                                <input type="button " name="previous " class="previous action-button-previous " value="Précédent " id="prec" />
+                                <button class="btn btn-success " id="step2">Enregistrer</button>
+                            </fieldset>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="cont2 cote2 ">
+            <table class="table ">
+                <thead style="background-color: rgb(1, 42, 104); color:white;">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prenom</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col">Date_de_naissance</th>
+                        <th scope="col">Lieu_de_naissance</th>
+                        <th scope="col">Classe</th>
+                        <th scope="col">Nom_du_tuteur</th>
+                        <th scope="col">Prenom_du_tuteur</th>
+                        <th scope="col">Professio</th>
+                        <th scope="col">Téléphone</th>
+                        <th scope="col">Email</th>
+
+
+                    </tr>
+                </thead>
+                <tbody id="corps">
+                    <!-- <tr>
+                        <th scope="row ">1</th>
+                        <td>Nkenke Eyebe</td>
+                        <td> Samuel</td>
+                        <td>Homme</td>
+                        <td>27 Octobre</td>
+                        <td>Franceville</td>
+                        <td>4eme</td>
+                        <td>Eyebe Vincent</td>
+
+                    </tr> -->
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="./index.js "></script>
+    <script src="./js.js "></script>
+</body>
+
+</html>
